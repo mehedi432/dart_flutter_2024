@@ -23,7 +23,53 @@ Dart । ডার্ট প্রোগ্রামিং ল্যাঙ্গ
     উপরোক্ত উদাহরণে আমরা দেখতে পারতেছি যে সময়ের পরিবর্তনের সাথে সাথে আমাদের মান তথা বয়সের পরিবর্তন ঘটছে এবং এই পরিবর্তন ধারণ করার জন্যে আমাদের ভ্যারিয়েবল এর প্রয়োজন হয় এবং প্রোগ্রামিং এ আমরা এটা ব্যবহার করে থাকি।
      
 ২। ডাটা টাইপস
-- প্রোগ্রামিং ল্যাঙ্গুয়েজ এ ভ্যারিয়েবল 
+- প্রোগ্রামিং ল্যাঙ্গুয়েজ এ ভ্যারিয়েবল অনেক প্রকার হয়ে থাকে যার মধ্যে কিছু আছে Primitive data types এবং কিছু আছে non primitive data types, ডার্ট প্রোগ্রামিং ল্যাঙ্গুয়েজে আমরা সাধারণত বেশ কয়েকটা ডাটা types ব্যবহার করে থাকি যেমন -
+  ১। Numbers - সংখ্যা বাচক 
+  ```dart
+    // ১. Numbers 
+    int age = ২১;
+    double weight = ২১.৩৪; 
+  ```
+  ২। String - শব্দ বা ক্যারেক্টার এর সমন্বয়
+  ```dart
+    String name = "অব্দুল্লাহ আল মেহেদী"
+  ```
+  ৩। Boolean - সত্য বা মিথ্যা
+  ```dart
+    bool isTrue = true;
+    bool isFalse = false;
+  ```
+  ৪। Lists - একই জাতীয় অনেকগুলা ক্যারেক্টার বা সংখ্যা
+  ```dart
+    List<int> officeTimes = [৯, ১, ৭];
+  ```
+  ৫। Sets - একটি unordered লিস্ট যেটাতে একই আইটেম এক এর অধিক থাকতে পারবে না।
+  ```dart
+    Set<int> officeCard = {২১, ৩৪, ৫৫, ৮৯};
+  ```
+  ৬। Maps - key এবং value এর combination এ তৈরী
+  ```dart
+    Map<String> employee = {
+      "Name" : "আব্দুল্লাহ আল মেহেদী",
+      "Designation" : "তথ্য ও যোগাযোগ প্রযুক্তি"
+  }
+  ```
+  ৭। Runes - Represents a Unicode character.
+  ```dart
+    Rune myRune = '\u{1F609}'.runes.first; // Represents a winking face emoji
+  ```
+  ৮। Symbols: Represents an identifier that is used as an operator or a method name.
+  ```dart
+    Symbol mySymbol = #myFunction;
+  ```
+  ৯। Dynamic: A special type that can hold values of any type. It is more flexible but sacrifices some static type checking.
+  ```dart
+    dynamic myDynamicVar = "Hello, Dart!";
+  ```
+  ১০। Null - Represents the absence of a value অথবা আমরা যদি কোন ভ্যালু না জেনে থাকি তাহলে 
+  ```dart
+    int? nullableInt = null;
+  ```
 ৩। Const 
 ৪। Final
 ৫। if Else
